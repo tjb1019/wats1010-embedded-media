@@ -19,6 +19,8 @@ header {
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center center;
+	opacity: 0.6;
+	z-index: -1;
 	text-align: center;
 	min-height: 400px;
 }
@@ -56,34 +58,34 @@ nav {
 	margin-right: auto;
 	margin-top: 18rem;
 	width: 30%;
-	background: lightblue;
 	padding: 1px;
-	border-radius: 2rem;
-	border: 3px solid black;
 }
 .main-nav {
 	margin-left: auto;
 	margin-right: auto;
+	z-index: 1;
 }
 .main-nav li {
 	font-size: 1.6rem;
 	font-family: fantasy;
 	padding: 0 10px 0 10px;
-	border: 4px ridge black;
-	border-radius: 10px;
-	background-color: lightblue;
+	border: 4px groove black;
+	border-radius: 5px;
 	display: inline;
 	margin-left: auto;
 	margin-right: auto;
 }
-a:link {
-	text-decoration: none;
-}
 a:visited {
 	color: blue;
 }
-.main-nav li:hover {
-	background: lightgoldenrodyellow;
+
+a:link {
+	text-decoration: none;
+	color: blue;
+}
+.main-nav li:hover, .main-nav a:hover {
+	background: blue;
+	color: white;
 	font-variant: small-caps;
 }
 .main-nav li:active {
@@ -96,17 +98,43 @@ a:visited {
 	background-repeat: no-repeat;
 	background-size: cover;
 	position: fixed;
+	border: 2px solid black;
 	top: 150px;
 	right: 0;
 	width: 7%;
-	height: 15%;
-	text-anchor
+	height: 20%;
+}
+.social-links {
+	position: fixed;
+	text-align: center;
+	list-style-type: none;
+	margin-left: 160px;
+	margin-right: 0;
+	margin-top: 50px;
+	padding: 0 0 0 10px;
+}
+#social li {
+	background: black;
+	border: 2px solid black;
+	border-radius: 4px;
+}
+#social a {
+	color: cyan;
+}
+#social a:hover {
+	background: cyan;
+	color: black;
+	font-variant: small-caps;
 }
 #social:hover {
-	width: 14%;
+	width: 21%;
 	transition: 2s width;
 }
-h2, .social-links {
+aside h2 {
+	position: fixed;
+	margin-left: 145px;
+	margin-right: 0;
+	padding: 0 0 0 10px;
 }
 /* THE VIDEO */
 #watch {
@@ -158,6 +186,7 @@ video {
 .weybec-people li {
 	display: inline-block;
 	text-align: center;
+	font-weight: bold;
 }
 .weybec-people img {
 	height: 200px;
