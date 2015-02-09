@@ -4,7 +4,194 @@
  *
  * Site Styles
  *****************************************************************************/
+body {
+	/*background: linear-gradient(to right, lightblue, blue);*/
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+}
+aside, article, section, header, footer, nav {
+	display: block;
+}
+/* THE HEADER AND NAVIGATION */
+header {
+	background-image: url('../img/monkaa_title.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	text-align: center;
+	min-height: 400px;
+}
+h1 {
+	font-family: Garamond;
+	font-variant: small-caps;
+	font-size: 1.6rem;
+	margin-bottom: 0;
+	margin-top: 0;
+	margin-left: auto;
+	margin-right:auto;
+	border: 3px solid black;
+	background: lightblue;
+	width: 85%;
+}
+header p {
+	border-top-width: 0;
+	border-right-width: 3px;
+	border-bottom-width: 6px;
+	border-left-width: 3px;
+	border-style: solid;
+	font-family: Garamond;
+	font-variant: small-caps;
+	font-size: 1.6rem;
+	margin-bottom: 0;
+	margin-top: 0;
+	margin-left: auto;
+	margin-right:auto;
+	background: lightblue;
+	width: 85%;
+}
+nav {
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 18rem;
+	width: 30%;
+	background: lightblue;
+	padding: 1px;
+	border-radius: 2rem;
+	border: 3px solid black;
+}
+.main-nav {
+	margin-left: auto;
+	margin-right: auto;
+}
+.main-nav li {
+	font-size: 1.6rem;
+	font-family: fantasy;
+	padding: 0 10px 0 10px;
+	border: 4px ridge black;
+	border-radius: 10px;
+	background-color: lightblue;
+	display: inline;
+	margin-left: auto;
+	margin-right: auto;
+}
+a:link {
+	text-decoration: none;
+}
+a:visited {
+	color: blue;
+}
+.main-nav li:hover {
+	background: lightgoldenrodyellow;
+	font-variant: small-caps;
+}
+.main-nav li:active {
+	background: green;
+}
+/* THE SOCIAL ASIDE */
+#social {
+	background-image: url('../img/monkaa_monkeyhang.jpg');
+	background-position: left;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: fixed;
+	top: 150px;
+	right: 0;
+	width: 7%;
+	height: 15%;
+	text-anchor
+}
+#social:hover {
+	width: 14%;
+	transition: 2s width;
+}
+h2, .social-links {
+}
+/* THE VIDEO */
+#watch {
+	background: lightblue;
+	width: 85%;
+	margin-left: auto;
+	margin-right: auto;
+	border: 3px solid black;
+	border-radius: 10px;
+	text-align: center;
+}
+video {
+	border: 5px inset black;
+}
+#watch a, #listen a {
+	border: 2px solid black;
+	background: #E5F55B;
+	padding: 0 5px 0 5px;
+	margin-top: 10px;
+}
+#watch a:hover, #listen a:hover {
+	background: green;
+	font-variant: small-caps;
+}
+/* THE AUDIO */
+#listen {
+	background: lightblue;
+	width: 25%;
+	margin-left: auto;
+	margin-right: auto;
+	border: 3px solid black;
+	border-radius: 10px;
+	text-align: center;
+}
 
- html {
-     color: green;
- }
+/* CREATOR PROFILES */
+.lead {
+	font-family: fantasy;
+}
+#about {
+	background: lightblue;
+	width: 85%;
+	margin-left: auto;
+	margin-right: auto;
+	border: 3px solid black;
+	border-radius: 10px;
+	text-align: center;
+}
+.weybec-people li {
+	display: inline-block;
+	text-align: center;
+}
+.weybec-people img {
+	height: 200px;
+	width: 200px;
+	border: 2px groove blue;
+	padding: 0;
+	margin-right: 10px;
+}
+/* FOOTER */
+footer {
+	background: lightblue;
+	width: 85%;
+	height: 75px;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 10px;
+	border: 3px solid black;
+	text-align: center;
+}
+#footer-vid {
+	position: fixed;
+	right: 0;
+	bottom: 0;
+	min-width: 100%;
+	min-height: 100%;
+	width: auto;
+	height: auto;
+	z-index: -100;
+	background: url('media/video/video_poster.png') no-repeat;
+	background-size: cover;
+}
+/* TYPOGRAPHY */
+h2, h3 {
+	text-transform: uppercase;
+	text-decoration: underline;
+	font-family: Georgia;
+}
